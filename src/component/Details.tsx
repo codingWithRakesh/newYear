@@ -1,13 +1,7 @@
-import { useLocation } from 'react-router-dom';
+
 const Details = () => {
-  const location = useLocation();
-
-  const getQueryParam = (param: string): string | null => {
-    const urlParams = new URLSearchParams(location.search);
-    return urlParams.get(param);
-  };
-
-  const receiver = getQueryParam('receiver');
+  
+  const receiver = new URLSearchParams(location.search).get("receiver") || '';
 
   return (
     <div className="details">
