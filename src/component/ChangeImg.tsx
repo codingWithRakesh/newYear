@@ -1,6 +1,6 @@
 import imgD from '../assets/images/newYear.jpg'
 
-const ChangeImg = () => {
+const ChangeImg: React.FC = () => {
   return (
     <div className="changeImg">
       <div className="showChange">
