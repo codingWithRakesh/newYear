@@ -1,150 +1,63 @@
 .container {
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 1rem;
-  color: #fff;
-
-  background: #3C3B3F;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #605C3C, #3C3B3F);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #605C3C, #3C3B3F);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  width: 100%; min-height: 100vh; display: flex; justify-content: center; align-items: center; flex-wrap: wrap; padding: 1rem; color: #fff; background: #3C3B3F; background: -webkit-linear-gradient(to right, #605C3C, #3C3B3F); background: linear-gradient(to right, #605C3C, #3C3B3F);
 }
-
 .row {
-  /* border: 1px solid black; */
-  width: 45%;
-  min-height: 70vh;
+  width: 45%; min-height: 70vh;
 }
-
-.fir{
-  width: 60%;
-  /* border: 1px solid #fff; */
-  padding-right: 2rem;
+.fir {
+  width: 60%; padding-right: 2rem;
 }
-
-
-.sec{
+.sec {
   width: 30%;
 }
-
-.details{
-  font-size: 2.5rem
+.details {
+  font-size: 2.5rem;
 }
-
-.curenttime{
-  font-size: 7rem;
-  color: #fff;
-  margin-top: 2rem;
+.curenttime {
+  font-size: 7rem; color: #fff; margin-top: 2rem;
 }
-
-
-
-
 .changeImg {
-  position: relative;
-  width: 100%; /* Set the desired width */
-  min-height: 90vh; /* Set the desired height */
-  margin: auto;
-  /* border: 1px solid #fff; */
-  border-radius: 5px;
-  overflow: hidden;
+  position: relative; width: 100%; min-height: 90vh; margin: auto; border-radius: 5px; overflow: hidden;
 }
-
-.showChange{
-  width: 100%;
-  min-height: 90vh;
-  /* background-color: red; */
-  display: flex;
-  align-items: center;
-  justify-self: center;
-  flex-wrap: wrap;
-  font-size: 10rem;
-  font-weight: bolder;
+.showChange {
+  width: 100%; min-height: 90vh; display: flex; align-items: center; justify-self: center; flex-wrap: wrap; font-size: 10rem; font-weight: bolder;
 }
-
-.rowCC{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+.rowCC {
+  width: 100%; display: flex; justify-content: center; align-items: center; flex-wrap: wrap;
 }
-
-
 .showimg {
-  width: 100%;
-  height: 100%;
-  border-radius: 5px;
-  overflow: hidden;
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 9;
-  opacity: 0; /* Initially hidden */
-  transform: translateY(100%); /* Start off-screen (bottom) */
-  animation: slideUp 0.8s forwards; /* Slide up animation */
-  animation-delay: 2.6s; /* Matches the animation + delay timing */
+  width: 100%; height: 100%; border-radius: 5px; overflow: hidden; position: absolute; left: 0; top: 0; z-index: 9; opacity: 0; transform: translateY(100%); animation: slideUp 0.8s forwards; animation-delay: 2.6s;
 }
-
 .showimg img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: 100%; height: 100%; object-fit: cover;
 }
-
 .number {
-  position: relative;
-  display: inline-block;
-  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  position: relative; display: inline-block; transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
-
 .old {
-  transform: translateY(0);
-  opacity: 1;
-  animation: moveUp 0.5s forwards;
-  animation-delay: 2s; /* Matches the delay */
+  transform: translateY(0); opacity: 1; animation: moveUp 0.5s forwards; animation-delay: 2s;
 }
-
 .new {
-  transform: translateY(100%);
-  opacity: 0;
-  animation: moveDown 0.5s forwards;
-  animation-delay: 2.5s; /* Matches the staggered animation timing */
+  transform: translateY(100%); opacity: 0; animation: moveDown 0.5s forwards; animation-delay: 2.5s;
 }
-
 @keyframes moveUp {
   to {
-    transform: translateY(-100%);
-    opacity: 0;
-    display: none;
+    transform: translateY(-100%); opacity: 0; display: none;
   }
 }
-
 @keyframes moveDown {
   from {
-    transform: translateY(100%);
-    opacity: 0;
+    transform: translateY(100%); opacity: 0;
   }
   to {
-    transform: translateY(0);
-    opacity: 1;
+    transform: translateY(0); opacity: 1;
   }
 }
-
 @keyframes slideUp {
   from {
-    transform: translateY(100%);
-    opacity: 0;
+    transform: translateY(100%); opacity: 0;
   }
   to {
-    transform: translateY(0);
-    opacity: 1;
+    transform: translateY(0); opacity: 1;
   }
 }
